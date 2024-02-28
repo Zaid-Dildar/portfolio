@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="fixed bottom-0 w-screen bg-gray-800 text-white py-4">
       <div className="container flex text-center">
         <p className="mx-auto my-auto">&copy; 2024 M.Zaid Dildar</p>
-        <span className="flex">
+        <span className="flex mr-5">
           <Link
             href="https://www.facebook.com/rzdildar?mibextid=ZbWKwL"
             target="_blank"
