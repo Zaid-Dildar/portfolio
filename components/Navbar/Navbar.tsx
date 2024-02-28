@@ -7,7 +7,7 @@ import React from "react";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <header className="bg-gray-800 text-white py-1 px-2 lg:px-4">
+    <header className="bg-gray-800 text-white py-1 px-2 max-sm:pb-3 lg:px-4">
       <div className="container mx-auto flex max-md:flex-col justify-between items-center">
         <div className="flex items-center">
           <img
