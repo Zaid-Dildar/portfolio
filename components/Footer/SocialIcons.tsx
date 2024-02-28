@@ -4,7 +4,7 @@ const FacebookIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="1 1 22 22"
-    className="h-8 w-8 rounded-lg hover:bg-gray-700 fill-white hover:fill-blue-600"
+    className="h-8 w-8 rounded-lg fill-white hover:fill-blue-600"
   >
     <path d="M12 2C6.477 2 2 6.477 2 12c0 4.84 3.548 8.848 8.164 9.624v-6.82H7.875V12h2.289V9.605c0-2.265 1.347-3.527 3.418-3.527.993 0 2.04.178 2.04.178v2.25h-1.15c-1.134 0-1.488.705-1.488 1.429V12h2.527l-.404 3.804h-2.123V21.62C18.452 20.848 22 16.84 22 12c0-5.523-4.477-10-10-10z" />
   </svg>
@@ -18,7 +18,7 @@ const WhatsAppIcon = () => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="-0.92 -0.92 32.51 32.51"
     xmlSpace="preserve"
-    className="h-8 w-8 rounded-lg hover:bg-gray-700 fill-white stroke-white hover:fill-green-500  hover:stroke-green-500"
+    className="h-8 w-8 rounded-lg fill-white stroke-white hover:fill-green-500  hover:stroke-green-500"
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
@@ -39,7 +39,7 @@ const InstagramIcon = () => (
     viewBox="0 0 2500 2500"
     xmlns="http://www.w3.org/2000/svg"
     fill="#000000"
-    className="h-8 w-8 hover:bg-gray-700 rounded-lg fill-white hover:fill-[url(#0)]"
+    className="h-8 w-8 rounded-lg fill-white hover:fill-[url(#0)]"
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
