@@ -1,61 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Skills = () => {
-  const [htmlImgUrl, setHtmlImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [cssImgUrl, setCssImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [reactImgUrl, setReactImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [tailwindImgUrl, setTailwindImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [nextImgUrl, setNextImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [mernImgUrl, setMernImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [mongoImgUrl, setMongoImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [firebaseImgUrl, setFirebaseImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  useEffect(() => {
-    getImage();
-  }, []);
-
-  const getImage = async () => {
-    const response: Response = await fetch("../../api/skills");
-    if (response.ok) {
-      const data: {
-        urls: {
-          htmlImg: string;
-          cssImg: string;
-          reactImg: string;
-          tailwindImg: string;
-          nextImg: string;
-          mernImg: string;
-          mongoImg: string;
-          firebaseImg: string;
-        };
-      } = await response.json();
-      setHtmlImgUrl(data.urls.htmlImg);
-      setCssImgUrl(data.urls.cssImg);
-      setReactImgUrl(data.urls.reactImg);
-      setTailwindImgUrl(data.urls.tailwindImg);
-      setNextImgUrl(data.urls.nextImg);
-      setMernImgUrl(data.urls.mernImg);
-      setMongoImgUrl(data.urls.mongoImg);
-      setFirebaseImgUrl(data.urls.firebaseImg);
-    }
-  };
   return (
     <div className="container mx-auto my-8 px-2 lg:px-4">
       <div className="m-3">
@@ -69,7 +16,7 @@ const Skills = () => {
               <img
                 id="htmlImage"
                 className="m-auto h-auto max-w-full rounded-lg"
-                src={htmlImgUrl}
+                src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488889/Portfolio/html_mvyrvl.png"
                 alt=""
               />
               <figcaption className="mt-2 text-lg text-center font-semibold text-gray-800 dark:text-gray-400">
@@ -82,7 +29,7 @@ const Skills = () => {
               <img
                 id="cssImage"
                 className="m-auto h-auto max-w-full rounded-lg"
-                src={cssImgUrl}
+                src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488889/Portfolio/css_ubegc4.png"
                 alt=""
               />
               <figcaption className="mt-2 text-lg text-center font-semibold text-gray-800 dark:text-gray-400">
@@ -95,7 +42,7 @@ const Skills = () => {
               <img
                 id="reactImage"
                 className="m-auto h-auto max-w-full rounded-lg"
-                src={reactImgUrl}
+                src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488895/Portfolio/react_bipoxh.webp"
                 alt=""
               />
               <figcaption className="mt-2 text-lg text-center font-semibold text-gray-800 dark:text-gray-400">
@@ -108,7 +55,7 @@ const Skills = () => {
               <img
                 id="tailwindImage"
                 className="m-auto h-64 max-w-full rounded-lg"
-                src={tailwindImgUrl}
+                src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488889/Portfolio/tailwind_cbjvq6.jpg"
                 alt=""
               />
               <figcaption className="mt-2 text-lg text-center font-semibold text-gray-800 dark:text-gray-400">
@@ -129,7 +76,7 @@ const Skills = () => {
               <img
                 id="nextImage"
                 className="m-auto h-52 max-w-full rounded-lg"
-                src={nextImgUrl}
+                src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488891/Portfolio/next_s7oepa.jpg"
                 alt=""
               />
               <figcaption className="mt-2 text-lg text-center font-semibold text-gray-800 dark:text-gray-400">
@@ -142,7 +89,7 @@ const Skills = () => {
               <img
                 id="mernImage"
                 className="m-auto h-52 max-w-full rounded-lg"
-                src={mernImgUrl}
+                src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488890/Portfolio/mern_bqh2og.jpg"
                 alt=""
               />
               <figcaption className="mt-2 text-lg text-center font-semibold text-gray-800 dark:text-gray-400">
@@ -163,7 +110,7 @@ const Skills = () => {
                 <img
                   id="mongoImage"
                   className="m-auto h-52 max-w-full rounded-lg"
-                  src={mongoImgUrl}
+                  src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488890/Portfolio/mongo_bsck1u.jpg"
                   alt=""
                 />
                 <figcaption className="mt-2 text-lg text-center font-semibold text-gray-800 dark:text-gray-400">
@@ -176,7 +123,7 @@ const Skills = () => {
                 <img
                   id="firebaseImage"
                   className="m-auto h-52 max-w-full rounded-lg"
-                  src={firebaseImgUrl}
+                  src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488890/Portfolio/firebase_w7p7jb.jpg"
                   alt=""
                 />
                 <figcaption className="mt-2 text-lg text-center font-semibold text-gray-800 dark:text-gray-400">

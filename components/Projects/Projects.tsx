@@ -1,33 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 
 const Projects = () => {
-  const [yelpcampImgUrl, setYelpcampImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [aspiringImgUrl, setAspiringImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  const [infinityImgUrl, setInfinityImgUrl] = useState<string>(
-    "https://tse3.mm.bing.net/th?id=OIP.vtf-jyhOiv_kTT3YF7248gHaEj&pid=Api&P=0&h=220"
-  );
-  useEffect(() => {
-    getImage();
-  }, []);
-
-  const getImage = async () => {
-    const response: Response = await fetch("../../api/projects");
-    if (response.ok) {
-      const data: {
-        urls: { yelpcampImg: string; aspiringImg: string; infinityImg: string };
-      } = await response.json();
-      setYelpcampImgUrl(data.urls.yelpcampImg);
-      setAspiringImgUrl(data.urls.aspiringImg);
-      setInfinityImgUrl(data.urls.infinityImg);
-    }
-  };
   return (
     <div>
       <h2 className="text-2xl text-center font-bold underline mt-8">
@@ -38,7 +14,7 @@ const Projects = () => {
           <img
             id="yelpcampImage"
             className="h-56 w-full object-cover md:h-full md:w-full rounded-t-xl"
-            src={yelpcampImgUrl}
+            src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488894/Portfolio/yelpcamp_b4n6l6.png"
             alt="Modern building architecture"
           />
         </div>
@@ -77,7 +53,7 @@ const Projects = () => {
           <img
             id="aspiringImage"
             className="h-56 w-full md:h-full md:w-full rounded-t-xl"
-            src={aspiringImgUrl}
+            src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488893/Portfolio/afc_ip5zwo.png"
             alt="Modern building architecture"
           />
         </div>
@@ -113,7 +89,7 @@ const Projects = () => {
           <img
             id="infinityImage"
             className="h-56 w-full md:h-full md:w-full rounded-t-xl"
-            src={infinityImgUrl}
+            src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706488893/Portfolio/infinity_ulif0g.png"
             alt="Modern building architecture"
           />
         </div>

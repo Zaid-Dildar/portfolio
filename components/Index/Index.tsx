@@ -1,32 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Index: React.FC = () => {
-  const [imgUrl, setImgUrl] = useState<string>(
-    "https://tse1.mm.bing.net/th?id=OIP.0TsJGYhWWOy_hBFOH0hX-gHaHa&pid=Api&rs=1&c=1&qlt=95&w=106&h=106"
-  );
-
-  useEffect(() => {
-    getImage();
-  }, []);
-
-  const getImage = async () => {
-    const response: Response = await fetch("../../api/home");
-    if (response.ok) {
-      const data: {
-        urls: { homeImg: string; navbarImg: string };
-      } = await response.json();
-      setImgUrl(data.urls.homeImg);
-      // setImgUrl(response.imgUrl);
-    }
-  };
-
   return (
     <div className="container flex-1 mx-auto my-8 px-2 lg:px-4">
       <img
         id="myImage"
-        src={imgUrl}
+        src="https://res.cloudinary.com/dmx66oic1/image/upload/v1706477818/Portfolio/Portoflio%20Image.jpg"
         alt="Home Image"
         className="w-80 h-80 rounded-3xl m-auto"
       />
