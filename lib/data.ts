@@ -80,7 +80,7 @@ export const projectsData = [
   {
     title: "Infinity",
     description:
-      "A public web socila media app. It allows users to add friends and share posts.",
+      "A public web social media app. It allows users to add friends and share posts.",
     tags: ["React", "Next.js", "Firebase", "Tailwind", "Framer"],
     imageUrl: infinityImg,
     link: "https://infinity-iota.vercel.app/",
