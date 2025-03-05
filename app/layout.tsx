@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dmx66oic1/image/upload/v1709872898/Portfolio/WhatsApp_Image_2024-03-08_at_09.32.13_a7e7a9fe_xyqagg.jpg",
+        url: "https://zaid-portfolio-site.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Muhammad Zaid Portfolio",
@@ -33,9 +33,7 @@ export const metadata = {
     title: "Muhammad Zaid | Full-Stack Developer",
     description:
       "Check out my portfolio showcasing innovative web development projects.",
-    images: [
-      "https://res.cloudinary.com/dmx66oic1/image/upload/v1709872898/Portfolio/WhatsApp_Image_2024-03-08_at_09.32.13_a7e7a9fe_xyqagg.jpg",
-    ],
+    images: ["https://zaid-portfolio-site.vercel.app/og-image.png"],
   },
 };
 
