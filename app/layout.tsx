@@ -23,7 +23,7 @@ export const metadata = {
       {
         url: "https://zaid-portfolio-site.vercel.app/og-image.png",
         width: 1200,
-        height: 630,
+        height: 800,
         alt: "Muhammad Zaid Portfolio",
       },
     ],
